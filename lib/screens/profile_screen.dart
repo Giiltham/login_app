@@ -20,7 +20,6 @@ class ProfileScreen extends StatelessWidget {
       IconButton(
         icon: Icon(Icons.logout),
         onPressed: () {
-// Action de déconnexion
         Navigator.pop(context);
       },
     ),
@@ -30,7 +29,6 @@ class ProfileScreen extends StatelessWidget {
         padding: EdgeInsets.all(16.0),
         child: Column(
           children: <Widget>[
-// Affichage des informations du profil
             ListTile(
               leading: Icon(Icons.person),
               title: Text('Nom'),
@@ -49,7 +47,6 @@ class ProfileScreen extends StatelessWidget {
             SizedBox(height: 24.0),
             ElevatedButton(
               onPressed: () {
-// Déconnexion en retournant à l'écran de connexion
                 Navigator.pop(context);
               },
               child: Text('Se déconnecter'),
